@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/cf3730f9aa.js" crossorigin="anonymous"></script>
+        <title>Frame by Using jAVAsCRIPT</title>
+        <style>
+            .container{
+                margin-left: 520px;
+                margin-right: 520px;
+                background-color: rgb(197, 220, 238);
+                border-radius: 10px;
+                padding-bottom: 20px;
+                border: 2px solid black;
+                box-shadow: 2px 2px 5px;
+            }
+            .flex{
+                text-align: center;
+            }
+            .shoes{
+                height: 200px;
+                border-radius: 15px;
+                width: 270px;
+            }
+            .flex{
+                display: flex;
+            }
+            .flex-inner{
+                display: flex;
+            }
+            h3{
+                margin-top: -1px;
+            }
+            .flex-box1{
+                margin-right: 7px;
+            }
+            .star{
+                height: 18px;
+            }
+            .shoes-name{
+                text-align: center;
+                margin-top: 5px;
+            }
+        </style>
+        <script>
+            let count=0;
+            function plus()
+            {
+                count++;
+                document.getElementById("change").innerHTML= count;
+            }
+
+            function minus()
+            {
+                count--;
+                document.getElementById("change").innerHTML= count;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <img src="./shoes.jpg" class="shoes" style="margin-left: 20px; margin-top: 20px;" ><br>
+            <p class="shoes-name">
+                <b>GIVENCHY LONDON Shoes</b>,<br> Shyam's shoes... All size's available
+            </p>
+            <p style="color: red; text-align: center;">
+                Hurry only 1 left!
+            </p>
+            <br>
+                <div class="flex-star" style="display: flex; margin-top: -15px; margin-left: 50px; " >
+                    <div>
+                        <b>Ratings : </b>
+                    </div>
+                    <div>
+                        <img src="./star.png"  class="star">
+                        <img src="./star.png"  class="star">
+                        <img src="./star.png"  class="star">
+                        <img src="./star.png"  class="star">
+                        <img src="./rating.png"  class="star">
+                    </div>
+                </div>
+            <div class="flex" style="margin-left: 50px;" >
+                <div class="flex-box1">
+                    <span style="font-size: 20px;" >Quantity</span>
+                </div>
+                <div class="flex-inner">
+                    <div class="flex-box2">
+                        <button onclick="minus()" style="margin-right: 5px; font-size: 20px;" >
+                            <i class="fa-solid fa-circle-minus"></i>
+                        </button>
+                    </div>
+                    <div class="flex-box3">
+                        <h3 id="change" style="font-size: 25px;" >0</h3>
+                    </div>
+                    <div class="flex-box4">
+                        <button onclick="plus()" style="margin-left: 5px; font-size: 20px;">
+                            <i  class="fa-sharp fa-solid fa-circle-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button style="padding: 0px 100px 0px 100px; margin-left: 12px; background-color: green; font-size: larger;">
+                <b>Buy Now</b>
+            </button>
+        </div>
+    </body>
+</html>
